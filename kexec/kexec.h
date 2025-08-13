@@ -235,7 +235,8 @@ extern int file_types;
 #define OPT_LOAD_LIVE_UPDATE	263
 #define OPT_EXEC_LIVE_UPDATE	264
 #define OPT_HOTPLUG		        265
-#define OPT_MAX		266
+#define OPT_FORCE_DTB		266
+#define OPT_MAX		267
 #define KEXEC_OPTIONS \
 	{ "help",		0, 0, OPT_HELP }, \
 	{ "version",		0, 0, OPT_VERSION }, \
@@ -263,6 +264,7 @@ extern int file_types;
 	{ "status",		0, 0, OPT_STATUS }, \
 	{ "print-ckr-size",     0, 0, OPT_PRINT_CKR_SIZE }, \
 	{ "hotplug",		    0, 0, OPT_HOTPLUG }, \
+	{ "force-dtb",          0, 0, OPT_FORCE_DTB }, \
 
 #define KEXEC_OPT_STR "h?vdfixyluet:pscaS"
 
